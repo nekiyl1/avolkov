@@ -19,6 +19,14 @@
 <body>
 	<header class="header">
 		<div class="header__container">
+			<button class="header__mobile-menu-button"></button>
+			<nav class="header__mobile-menu">
+				<ul>
+					<li><a href="#services">Услуги</a></li>
+					<li><a href="#works">Портфолио</a></li>
+					<li><a href="#price">Стоимость</a></li>
+				</ul>
+			</nav>
 			<nav class="header__menu">
 				<ul>
 					<li><a href="#services">Услуги</a></li>
@@ -28,6 +36,7 @@
 			</nav>
 			<div class="header__phone"><a href="tel:79045514349">+7 (904) 551-43-49</a></div>
 			<button class="header__call">Заказать звонок</button>
+			<button class="header__mobile-call"></button>
 		</div>
 	</header>
 	<main>
@@ -45,7 +54,8 @@
 		</section>
 		<section class="name-info">
 			<h1 class="name-info__heading">Волков Алексей</h1>
-			<p class="name-info__desc">Frontend-разработчик и веб- верстальщик</p>
+			<p class="name-info__desc">Не Frontend-разработчик и веб-верстальщик :)</p>
+			<button class="name-info__learn-more">Узнать больше</button>
 		</section>
 		<section id="services" class="services">
 			<div class="services__container">
@@ -76,28 +86,28 @@
 				<h2 class="works__heading">Примеры моих работ</h2>
 				<div class="works__slider">
 					<div class="works__slider-item">
-						<img src="img/work1.png" alt="Сайт психолога Веры Антоновой">
-						<p>Сайт психолога Веры Антоновой</p>
+						<img src="img/work1.png" alt="Личный блог">
+						<p>Личный блог</p>
 					</div>
 					<div class="works__slider-item">
-						<img src="img/work2.png" alt="Сайт магазина детской одежды">
-						<p>Сайт магазина детской одежды</p>
+						<img src="img/work2.png" alt="Навык Я.Алисы — Известная Личность">
+						<p>Я.Алиса — Известная Личность</p>
 					</div>
 					<div class="works__slider-item">
-						<img src="img/work3.png" alt="Сайт магазина «Рыболов»">
-						<p>Сайт магазина &laquo;Рыболов&raquo;</p>
+						<img src="img/work3.png" alt="Android Приложение — NColorMobile">
+						<p>Android Приложение — NColorMobile</p>
 					</div>
 					<div class="works__slider-item">
-						<img src="img/work4.png" alt="Сайт психолога Веры Антоновой">
-						<p>Сайт психолога Веры Антоновой</p>
+						<img src="img/work4.png" alt="Unity3D — CapAs">
+						<p>Unity3D — CapAs</p>
 					</div>
 					<div class="works__slider-item">
-						<img src="img/work5.png" alt="Сайт магазина детской одежды">
-						<p>Сайт магазина детской одежды</p>
+						<img src="img/work5.png" alt="Сайт салона красоты">
+						<p>Сайт салона красоты</p>
 					</div>
 					<div class="works__slider-item">
-						<img src="img/work6.png" alt="Сайт магазина «Рыболов»">
-						<p>Сайт магазина &laquo;Рыболов&raquo;</p>
+						<img src="img/work6.png" alt="Интерактивная карта">
+						<p>Интерактивная карта</p>
 					</div>
 				</div>
 				<button class="works__learn-more">Заказать проект</button>
@@ -110,8 +120,10 @@
 			<span class="price__el price__el_el4">{ }</span>
 			<span class="price__el price__el_el5">&lt;div&gt;</span>
 			<div class="price__container">
-				<h3>Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за 4 часа.*</h3>
-				<p>* Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в зависимости от
+				<h3>Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за&nbsp;4&nbsp;часа.*
+				</h3>
+				<p>* Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в&nbsp;зависимости
+					от
 					сложности задач.</p>
 			</div>
 		</section>
@@ -147,7 +159,22 @@
 			<p>&copy; Волков Алексей, 2020</p>
 		</div>
 	</footer>
-	<script src="js/jquery-3.5.0.min.js"></script>
+	<div class="modal-form">
+		<div class="modal-form__content">
+			<span class="modal-form__close">&times;</span>
+			<form>
+				<label for="name">Имя</label><br>
+				<input id="name" type="text"><br><br>
+				<label for="phone">Телефон</label><br>
+				<input id="phone" type="text"><br><br>
+				<label for="msg">Сообщение</label><br>
+				<textarea id="msg"></textarea><br><br>
+				<button class="modal-form__send">Отправить</button>
+			</form>
+			
+		</div>
+	</div>
+	<script src="js/jquery-3.5.1.min.js"></script>
 	<script src="js/slick/slick.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
