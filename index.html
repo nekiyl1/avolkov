@@ -2,9 +2,10 @@
 <html lang="ru">
 
 <head>
-	<title>7.7 Домашняя работа</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>Волков Алексей</title>
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/fontello.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -17,48 +18,138 @@
 
 <body>
 	<header class="header">
-		<button class="header__call">Заказать звонок</button>
+		<div class="header__container">
+			<nav class="header__menu">
+				<ul>
+					<li><a href="#services">Услуги</a></li>
+					<li><a href="#works">Портфолио</a></li>
+					<li><a href="#price">Цены</a></li>
+				</ul>
+			</nav>
+			<div class="header__phone"><a href="tel:79045514349">+7 (904) 551-43-49</a></div>
+			<button class="header__call">Заказать звонок</button>
+		</div>
 	</header>
 	<main>
-		<div class="general-info">
+		<section class="general-info">
 			<div class="general-info__el general-info__el_el1">{ }</div>
 			<div class="general-info__el general-info__el_el2">&lt;div&gt;</div>
 			<div class="general-info__el general-info__el_el3">#</div>
-			<div class="general-info__el general-info__el_el4">{ }</div>
-			<div class="general-info__el general-info__el_el5">&lt;/&gt;</div>
-			<div class="general-info__el general-info__el_el6">&lt;div&gt;</div>
-			<div class="general-info__el general-info__el_el7">&lt;/&gt;</div>
-			<div class="general-info-name">
-				<h1 class="general-info__text">Волков Алексей</h1>
+			<div class="general-info__el general-info__el_el4">&lt;/&gt;</div>
+			<div class="general-info__el general-info__el_el5">&lt;div&gt;</div>
+			<div class="general-info__about">
+				<h1 class="general-info__heading">Волков Алексей</h1>
 				<p class="general-info__desc">Не Frontend-разработчик и веб-верстальщик :)</p>
+				<button class="general-info__learn-more">Узнать больше</button>
 			</div>
-		</div>
-		<div class="name-info">
-			<h1 class="name-info__text">Волков Алексей</h1>
+		</section>
+		<section class="name-info">
+			<h1 class="name-info__heading">Волков Алексей</h1>
 			<p class="name-info__desc">Frontend-разработчик и веб- верстальщик</p>
-		</div>
-		<div>
-			<button class="arrow"></button>
-		</div>
-		<div class="price">
-		</div>
+		</section>
+		<section id="services" class="services">
+			<div class="services__container">
+				<h2 class="services__heading">Что я делаю</h2>
+				<div class="services__items">
+					<div class="services__item">
+						<img src="img/service1.png" alt="Вёрстка">
+						<div class="services__text">Вёрстка лендинг–страниц и&nbsp;сайтов любой сложности</div>
+					</div>
+					<div class="services__item">
+						<img src="img/service2.png" alt="Адаптивная вёрстка">
+						<div class="services__text">Адаптивная вёрстка под все браузеры и устройства</div>
+					</div>
+					<div class="services__item">
+						<img src="img/service3.png" alt="Frontend–разработка">
+						<div class="services__text">Frontend–разработка и программирование</div>
+					</div>
+					<div class="services__item">
+						<img src="img/service4.png" alt="Исправление и доработка">
+						<div class="services__text">Исправление и доработка существующей вёрстки</div>
+					</div>
+				</div>
+				<button class="services__learn-more">Узнать стоимость</button>
+			</div>
+		</section>
+		<section id="works" class="works">
+			<div class="works__container">
+				<h2 class="works__heading">Примеры моих работ</h2>
+				<div class="works__slider">
+					<div class="works__slider-item">
+						<img src="img/work1.png" alt="Сайт психолога Веры Антоновой">
+						<p>Сайт психолога Веры Антоновой</p>
+					</div>
+					<div class="works__slider-item">
+						<img src="img/work2.png" alt="Сайт магазина детской одежды">
+						<p>Сайт магазина детской одежды</p>
+					</div>
+					<div class="works__slider-item">
+						<img src="img/work3.png" alt="Сайт магазина «Рыболов»">
+						<p>Сайт магазина &laquo;Рыболов&raquo;</p>
+					</div>
+					<div class="works__slider-item">
+						<img src="img/work4.png" alt="Сайт психолога Веры Антоновой">
+						<p>Сайт психолога Веры Антоновой</p>
+					</div>
+					<div class="works__slider-item">
+						<img src="img/work5.png" alt="Сайт магазина детской одежды">
+						<p>Сайт магазина детской одежды</p>
+					</div>
+					<div class="works__slider-item">
+						<img src="img/work6.png" alt="Сайт магазина «Рыболов»">
+						<p>Сайт магазина &laquo;Рыболов&raquo;</p>
+					</div>
+				</div>
+				<button class="works__learn-more">Заказать проект</button>
+			</div>
+		</section>
+		<section id="price" class="price">
+			<span class="price__el price__el_el1">{ }</span>
+			<span class="price__el price__el_el2">#</span>
+			<span class="price__el price__el_el3">&lt;/&gt;</span>
+			<span class="price__el price__el_el4">{ }</span>
+			<span class="price__el price__el_el5">&lt;div&gt;</span>
+			<div class="price__container">
+				<h3>Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за 4 часа.*</h3>
+				<p>* Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в зависимости от
+					сложности задач.</p>
+			</div>
+		</section>
 	</main>
 	<footer class="footer">
-		<div>
+		<div class="footer__container">
+			<nav class="footer__menu">
+				<ul>
+					<li><a href="#services">Услуги</a></li>
+					<li><a href="#works">Портфолио</a></li>
+					<li><a href="#price">Цены</a></li>
+				</ul>
+			</nav>
+			<div class="footer__contact">
+				<div class="footer__phone"><i class="footer__icon icon-phone"></i><a class="footer__link"
+						href="tel:79045514349">+7
+						(904) 551-43-49</a></div>
+				<div class="footer__email"><i class="footer__icon icon-mail-alt"></i><a class="footer__link"
+						href="mailto:nekiyl1@gmail.com">nekiyl1@gmail.com</a></div>
+			</div>
+			<div class="footer__social">
+				<button class="footer__call">Заказать звонок</button>
+				<a class="footer__social-link footer__social-link_vk" href="https://vk.com/nekiyl" target="_blank"></a>
+				<a class="footer__social-link footer__social-link_fb" href="https://www.facebook.com/nekiyl"
+					target="_blank"></a>
+				<a class="footer__social-link footer__social-link_tw" href="https://twitter.com/nekiyl"
+					target="_blank"></a>
+				<a class="footer__social-link footer__social-link_inst" href="https://www.instagram.com/nekiyl1/"
+					target="_blank"></a>
+			</div>
 		</div>
-		<div class="footer__contact">
-			<div class="footer__phone"><i class="footer__icon icon-phone"></i><a class="footer__link" href="tel:79045514349">+7
-					(904) 551-43-49</a></div>
-			<div class="footer__email"><i class="footer__icon icon-mail-alt"></i><a class="footer__link"
-					href="mailto:nekiyl1@gmail.com">nekiyl1@gmail.com</a></div>
-		</div>
-		<div class="footer__social">
-			<a class="vk footer__social-link" href="https://vk.com/nekiyl" target="_blank"></a>
-			<a class="fb footer__social-link" href="https://www.facebook.com/nekiyl" target="_blank"></a>
-			<a class="tw footer__social-link" href="https://twitter.com/nekiyl" target="_blank"></a>
-			<a class="inst footer__social-link" href="https://www.instagram.com/nekiyl1/" target="_blank"></a>
+		<div class="footer__copy">
+			<p>&copy; Волков Алексей, 2020</p>
 		</div>
 	</footer>
+	<script src="js/jquery-3.5.0.min.js"></script>
+	<script src="js/slick/slick.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>
