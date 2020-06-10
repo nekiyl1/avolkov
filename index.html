@@ -3,9 +3,9 @@
 
 <head>
 	<title>Волков Алексей</title>
-	<link rel="stylesheet" href="css/slick.css">
-	<link rel="stylesheet" href="css/fontello.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="preload" href="fonts/roboto-v20-latin_cyrillic-regular.woff2" as="Roboto" type="font/woff2" crossorigin>
+	<link rel="stylesheet" href="css/styles.min.css">
+	<script src="js/scripts.min.js" defer></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -14,6 +14,7 @@
 	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
+	<meta charset="utf-8">
 </head>
 
 <body>
@@ -31,7 +32,7 @@
 				<ul>
 					<li><a href="#services">Услуги</a></li>
 					<li><a href="#works">Портфолио</a></li>
-					<li><a href="#price">Цены</a></li>
+					<li><a href="#price">Стоимость</a></li>
 				</ul>
 			</nav>
 			<div class="header__phone"><a href="tel:79045514349">+7 (904) 551-43-49</a></div>
@@ -46,10 +47,13 @@
 			<div class="general-info__el general-info__el_el3">#</div>
 			<div class="general-info__el general-info__el_el4">&lt;/&gt;</div>
 			<div class="general-info__el general-info__el_el5">&lt;div&gt;</div>
-			<div class="general-info__about">
-				<h1 class="general-info__heading">Волков Алексей</h1>
-				<p class="general-info__desc">Не Frontend-разработчик и веб-верстальщик :)</p>
-				<button class="general-info__learn-more">Узнать больше</button>
+			<div class="general-info__container">
+				<div class="general-info__about">
+					<h1 class="general-info__heading">Волков Алексей</h1>
+					<p class="general-info__desc">Не Frontend-разработчик и веб-верстальщик :)</p>
+					<button class="general-info__learn-more">Узнать больше</button>
+				</div>
+				<img src="img/avolkov.png" alt="Волков Алексей" class="general-info__photo">
 			</div>
 		</section>
 		<section class="name-info">
@@ -134,7 +138,7 @@
 				<ul>
 					<li><a href="#services">Услуги</a></li>
 					<li><a href="#works">Портфолио</a></li>
-					<li><a href="#price">Цены</a></li>
+					<li><a href="#price">Стоимость</a></li>
 				</ul>
 			</nav>
 			<div class="footer__contact">
@@ -171,12 +175,8 @@
 				<textarea id="msg"></textarea><br><br>
 				<button class="modal-form__send">Отправить</button>
 			</form>
-			
 		</div>
 	</div>
-	<script src="js/jquery-3.5.1.min.js"></script>
-	<script src="js/slick/slick.min.js"></script>
-	<script src="js/script.js"></script>
 </body>
 
 </html>
