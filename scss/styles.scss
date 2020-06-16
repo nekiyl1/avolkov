@@ -212,7 +212,7 @@ button {
 }
 .general-info__container {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	max-width: 1170px;
 	margin: 0 auto;
 }
@@ -375,7 +375,6 @@ button {
 }
 .price {
 	width: 100%;
-	height: 364px;
 	background: linear-gradient(13deg, #ff8f5a 26%, #ff2f96 73%);
 	color: #fff;
 	position: relative;
@@ -384,6 +383,7 @@ button {
 	max-width: 950px;
 	margin: 0px auto;
 	padding-top: 80px;
+	padding-bottom: 80px;
 	h3 {
 		font-size: 45px;
 	}
@@ -719,7 +719,7 @@ button {
 }
 @media (max-width: 1024px) {
 	.general-info {
-		background-position-x: 450%;
+		background-position-x: 100%;
 		background-position-y: -140%;
 	}
 }
@@ -846,17 +846,12 @@ button {
 		h3 {
 			font-size: 28px;
 		}
-		padding-top: 45px;
-		padding-left: 20px;
-		padding-right: 20px;
+		padding: 45px 20px;
 		line-height: 40px;
 		p {
 			font-size: 15px;
 			margin-top: 20px;
 		}
-	}
-	.price {
-		height: 436px;
 	}
 	.footer {
 		padding-top: 20px;
